@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Number</title>
+</head>
+<body>
+    <script language="javascript">
+        // Prompt the user to enter a number
+        var a = prompt("Enter a number");
+        var no = parseInt(a);
+        var r = 0;
+        var s = 0;
+
+        // Loop to reverse the number
+        while (no > 0) {
+            r = no % 10;
+            s = s * 10 + r;
+            no = parseInt(no / 10);
+        }
+
+        //
